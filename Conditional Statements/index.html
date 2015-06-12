@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Conditional Statements</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" type="text/javascript" charset="utf-8" async defer>
+	</script>
+</head>
+<body>
+	<main id="PageContent">
+		<section id="Problem1" title="You can use Tab to cycle through">
+				<h2>PRoblem 1. Exchange if greater</h2>
+				<ul>
+					<li>
+						Write an if statement that takes two double variables a and b and exchanges their values if the first one is greater than the second.
+					</li>
+					<li>
+						As a result print the values a and b, separated by a space.
+					</li>
+				</ul>
+				<table>
+						<tr>
+							<td>A:</td>
+							<td>
+								<input type="number" name="inputA" value="" placeholder="5" tabindex="1" />
+							</td>
+							<td rowspan="2">
+								<button onclick="exchangeIfGreater()" tabindex="2">OK</button>
+							</td>
+							<td class="output" rowspan="2">
+								<output id="resultP1">Result</output>
+							</td>
+						</tr>
+						<tr>
+							<td>B:</td>
+							<td>
+								<input type="number" name="inputB" value="" placeholder="2" tabindex="1" />
+							</td>
+						</tr>
+				</table>
+		</section>
+		<section id="Problem2">
+				<h2>Problem 2. Multiplication Sign</h2>
+				<ul>
+					<li>
+						Write a script that shows the sign (+, - or 0) of the product of three real numbers, without calculating it.
+					</li>
+					<li>
+						Use a sequence of if operators.
+					</li>
+				</ul>
+				<table>
+					<tr>
+						<th>A</th>
+						<th>B</th>
+						<th>C</th>
+						<td rowspan="2">
+							<button onclick="showSign()" tabindex="3">OK</button>
+						</td>
+						<td class="output" rowspan="2">
+							<output id="resultP2">Result</output>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" name="inputA" value="" placeholder="-2" tabindex="2" />
+						</td>
+						<td>
+							<input type="number" name="inputB" value="" placeholder="-2" tabindex="2" />
+						</td>
+						<td>
+							<input type="number" name="inputC"  value="" placeholder="1" tabindex="2" />
+						</td>
+					</tr>
+				</table>
+		</section>
+		<section id="Problem3">
+				<h2>Problem 3. The biggest of Three</h2>
+				<ul>
+					<li>
+						Write a script that finds the biggest of three numbers.
+					</li>
+					<li>
+						Use nested if statements.
+					</li>
+				</ul>
+				<table>
+					<tr>
+						<th>A</th>
+						<th>B</th>
+						<th>C</th>
+						<td rowspan="2">
+							<button onclick="biggestOfThree()" tabindex="4">OK</button>
+						</td>
+						<td class="output" rowspan="2">
+							<output id="resultP3">Result</output>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" name="inputA" value="" placeholder="-2" tabindex="3" />
+						</td>
+						<td>
+							<input type="number" name="inputB" value="" placeholder="4" tabindex="3" />
+						</td>
+						<td>
+							<input type="number" name="inputC" value="" placeholder="3" tabindex="3" />
+						</td>
+					</tr>
+				</table>
+		</section>
+		<section id="Problem4">
+				<h2>Problem 4. Sort 3 numbers</h2>
+				<ul>
+					<li>
+						Sort 3 real values in descending order.
+					</li>
+					<li>
+						Use nested if statements.
+					</li>
+				</ul>
+				<table>
+					<tr>
+						<th>A</th>
+						<th>B</th>
+						<th>C</th>
+						<td rowspan="2">
+							<button onclick="sortNumbers()" tabindex="5">OK</button>
+						</td>
+						<td class="output" rowspan="2">
+							<output id="resultP4">Result</output>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" name="inputA" value="" placeholder="0" tabindex="4" />
+						</td>
+						<td>
+							<input type="number" name="inputB" value="" placeholder="-2.5" tabindex="4" />
+						</td>
+						<td>
+							<input type="number" name="inputC" value="" placeholder="5" tabindex="4" />
+						</td>
+					</tr>
+				</table>
+		</section>
+		<section id="Problem5">
+				<h2>Problem 5. Digit as word</h2>
+				<ul>
+					<li>
+						Write a script that asks for a digit (0-9), and depending on the input, shows the digit as a word (in English).
+					</li>
+					<li>
+						Print “not a digit” in case of invalid input.
+					</li>
+					<li>
+						Use a switch statement.
+					</li>
+				</ul>
+				<table>
+					<tr>
+						<th>
+							<div>digit</div><input type="text" name="inputC" value="" placeholder="5" tabindex="5" />
+						</th>
+						<td>
+							<button onclick="digitAsWord()" tabindex="6">OK</button>
+						</td>
+						<td class="output">
+							<output id="resultP5">Result</output>
+						</td>
+					</tr>
+				</table>
+		</section>
+		<section id="Problem6">
+				<h2>Problem 6. Quadratic equation</h2>
+				<ul>
+					<li>
+						Write a script that reads the coefficients a, b and c of a quadratic equation ax2 + bx + c = 0 and solves it (prints its real roots).
+					</li>
+					<li>
+						Calculates and prints its real roots.
+					</li>
+				</ul>
+				<table>
+					<tr>
+						<th>A</th>
+						<th>B</th>
+						<th>C</th>
+						<td rowspan="2">
+							<button onclick="quadraticEquation()" tabindex="7">OK</button>
+						</td>
+						<td class="output" rowspan="2">
+							<output id="resultP6">Result</output>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" name="inputA" value="" placeholder="0" tabindex="6" />
+						</td>
+						<td>
+							<input type="number" name="inputB" value="" placeholder="-2.5" tabindex="6" />
+						</td>
+						<td>
+							<input type="number" name="inputC" value="" placeholder="5" tabindex="6" />
+						</td>
+					</tr>
+				</table>
+		</section>
+		<section id="Problem7">
+				<h2>Problem 7. The biggest of five numbers</h2>
+				<ul>
+					<li>
+						Write a script that finds the greatest of given 5 variables.
+					</li>
+					<li>
+						Use nested if statements.
+					</li>
+				</ul>
+				<table>
+					<tr>
+						<th>A</th>
+						<th>B</th>
+						<th>C</th>
+						<th>D</th>
+						<th>E</th>
+						<td rowspan="2">
+							<button onclick="biggestOfFive()" tabindex="8">OK</button>
+						</td>
+						<td class="output" rowspan="2">
+							<output id="resultP7">Result</output>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" name="inputA" value="" placeholder="-2" tabindex="7" />
+						</td>
+						<td>
+							<input type="number" name="inputB" value="" placeholder="4" tabindex="7" />
+						</td>
+						<td>
+							<input type="number" name="inputC" value="" placeholder="3" tabindex="7" />
+						</td>
+						<td>
+							<input type="number" name="inputD" value="" placeholder="2" tabindex="7" />
+						</td>
+						<td>
+							<input type="number" name="inputE" value="" placeholder="0" tabindex="7" />
+						</td>
+					</tr>
+				</table>
+		</section>
+		<section id="Problem8">
+				<h2>Problem 8. Number as words</h2>
+				<ul>
+					<li>
+						Write a script that converts a number in the range [0…999] to words, corresponding to its English pronunciation.
+					</li>
+				</ul>
+				<table>
+					<tr>
+						<th>
+							<div>digit</div><input type="text" name="inputC" value="" placeholder="5" tabindex="8" />
+						</th>
+						<td>
+							<button onclick="numberAsWord()" tabindex="9">OK</button>
+						</td>
+						<td class="output">
+							<output id="resultP8">Result</output>
+						</td>
+					</tr>
+				</table>
+		</section>
+	</main>
+</body>
+</html>

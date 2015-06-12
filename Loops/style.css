@@ -1,0 +1,201 @@
+/* Default Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+address,
+cite,
+code,
+del,
+em,
+img,
+samp,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+}
+/*End of Reset*/
+/*Custom Style Sheet Below*/
+body {
+  padding: 10% 0;
+  font-size: 16px;
+  font-family: Palatino Linotype;
+  background: -moz-linear-gradient(45deg, #2b0808 0%, #a86c54 59%, rgba(202, 135, 105, 0.7) 75%, rgba(255, 178, 137, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #2b0808), color-stop(59%, #a86c54), color-stop(75%, rgba(202, 135, 105, 0.7)), color-stop(100%, rgba(255, 178, 137, 0)));
+  background: -webkit-linear-gradient(45deg, #2b0808 0%, #a86c54 59%, rgba(202, 135, 105, 0.7) 75%, rgba(255, 178, 137, 0) 100%);
+  background: -o-linear-gradient(45deg, #2b0808 0%, #a86c54 59%, rgba(202, 135, 105, 0.7) 75%, rgba(255, 178, 137, 0) 100%);
+  background: -ms-linear-gradient(45deg, #2b0808 0%, #a86c54 59%, rgba(202, 135, 105, 0.7) 75%, rgba(255, 178, 137, 0) 100%);
+  background: linear-gradient(45deg, #2b0808 0%, #a86c54 59%, rgba(202, 135, 105, 0.7) 75%, rgba(255, 178, 137, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2b0808', endColorstr='#00ffb289', GradientType=1);
+  background-attachment: fixed;
+  height: 100%;
+}
+header {
+  width: 600px;
+  margin: 0 auto;
+}
+header h1 {
+  text-align: center;
+  margin: 10px 0;
+  text-decoration: underline;
+  color: transparent;
+  text-shadow: -9px 5px 1px #67382d, -10px 5px 2px #000000;
+}
+#Navigation {
+  text-align: center;
+}
+#Navigation ul {
+  border: 1px solid #000;
+  padding: 10px 0;
+}
+#Navigation ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#Navigation ul li a {
+  padding: 2px 5px;
+  color: #fff;
+  border: 1px outset #fff;
+  background: #b67d66;
+}
+#Navigation ul li a:active {
+  border-style: inset;
+}
+#MainContent {
+  width: 900px;
+  height: 260px;
+  margin: 5px auto;
+}
+#MainContent .Content {
+  display: none;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 5px auto;
+  border: 1px solid #000;
+  padding: 10px;
+  background: #DFC9B2;
+}
+#MainContent .Content:target {
+  display: block;
+}
+#MainContent .Content h2,
+#MainContent .Content p,
+#MainContent .Content form {
+  margin: 0 5px 5px 5px;
+}
+#MainContent .Content form {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  height: 100%;
+  color: #955d49;
+}
+#MainContent .Content form > p {
+  margin-bottom: 20px;
+}
+#MainContent .Content form > p em {
+  background: #fff;
+}
+#MainContent .Content form .interface {
+  position: absolute;
+  bottom: 10px;
+  width: 48%;
+}
+#MainContent .Content form .interface span {
+  font-size: 18px;
+}
+#MainContent .Content form input {
+  color: #fff;
+  background: #b67d66;
+  font-size: 20px;
+}
+#MainContent .Content form input[type="number"] {
+  width: 100px;
+}
+#MainContent .Content form input[type="number"]::-webkit-inner-spin-button,
+#MainContent .Content form input[type="number"] -webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+#MainContent .Content form input[type="text"] {
+  width: 200px;
+}
+#MainContent .Content form input[type="text"],
+#MainContent .Content form input[type="number"] {
+  background: #fff;
+  color: #955d49;
+  font-style: italic;
+}
+#MainContent .Content .Result {
+  font-family: Consolas;
+  font-style: italic;
+  border: 1px solid #000;
+  display: inline-block;
+  vertical-align: top;
+  width: 51%;
+  height: 100%;
+  overflow: auto;
+  background: #000;
+  color: #eee;
+}
+#MainContent .Content .Result p:first-child {
+  text-align: center;
+  margin: 2px;
+}
+#Navigation ul,
+.Content {
+  box-shadow: -9px 11px 20px #67382d, -10px 11px 15px #000000;
+}

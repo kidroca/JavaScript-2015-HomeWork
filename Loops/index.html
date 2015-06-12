@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Loops Homework</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<header>
+		<h1>Loops Homework</h1>
+		<nav id="Navigation">
+		    <ul>
+		        <li><a href="#p1">Problem 1</a></li>
+		        <li><a href="#p2">Problem 2</a></li>
+		        <li><a href="#p3">Problem 3</a></li>
+		        <li><a href="#p4">Problem 4</a></li>
+		    </ul>
+		</nav>
+	</header>
+	<main id="MainContent">
+		<section id="p1" class="Content">
+			<form method="get">
+				<h2>Problem 1. Numbers</h2>
+				<p>Write a script that prints all the numbers from <em>1</em> to <em>N</em>.</p>
+				<div class="interface">
+				<span>Enter n = </span>
+				<input type="number" id="inputP1" />
+				<input type="submit" value="Enter" onclick="numbersToN()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<p>Result:</p>
+				<p id="ResultP1"></p>
+			</div>
+		</section>
+		<section id="p2" class="Content">
+			<form method="get">
+				<h2>Problem 2. Numbers not divisible</h2>
+				<p>Write a script that prints all the numbers from <em>1</em> to <em>N</em>,  that are not divisible by <em>3</em> and <em>7</em> at the same time</p>
+				<div class="interface">
+				<span>Enter n = </span>
+				<input type="number" id="inputP2" />
+				<input type="submit" value="Enter" onclick="notDivisible()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<p>Result:</p>
+				<p id="ResultP2"></p>
+			</div>
+		</section>
+		<section id="p3" class="Content">
+			<form method="get">
+				<h2>Problem 3. Min/Max of sequence</h2>
+				<p>Write a script that finds the <em>max</em> and <em>min</em> number from a sequence of numbers.</p>
+				<div class="interface">
+				<span>Enter numbers separated by space:</span>
+				<input type="text" id="inputP3" />
+				<input type="submit" value="Enter" onclick="minMaxNumber()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<p>Result:</p>
+				<p id="ResultP3"></p>
+			</div>
+		</section>
+		<section id="p4" class="Content">
+			<form method="get">
+				<h2>Problem 4. Lexicographically smallest</h2>
+				<p>Write a script that finds the lexicographically smallest and largest property in <em>document</em>, <em>window</em> and <em>navigator</em> objects.</p>
+				<div class="interface">
+				<span>Display Result</span>
+				<input type="submit" value="Ok" onclick="lexiMinMax()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<p>Result:</p>
+				<p id="ResultP4"></p>
+			</div>
+		</section>

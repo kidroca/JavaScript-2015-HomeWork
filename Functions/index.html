@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Functions Homework</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+<body>
+	<header>
+		<h1>Functions Homework</h1>
+		<nav id="Navigation">
+		    <ul>
+		        <li><a href="#p1">Problem 1</a></li>
+		        <li><a href="#p2">Problem 2</a></li>
+		        <li><a href="#p3">Problem 3</a></li>
+		        <li><a href="#p4">Problem 4</a></li>
+		        <li><a href="#p5">Problem 5</a></li>
+		        <li><a href="#p6">Problem 6</a></li>
+		        <li><a href="#p7">Problem 7</a></li>
+		    </ul>
+		</nav>
+	</header>
+	<main id="MainContent">
+		<section id="p1" class="Content">
+			<form method="get">
+				<h2>Problem 1. English digit</h2>
+				<p>Write a function that returns the last digit of given integer as an English word.</p>
+				<div class="example">
+					<span class="hint">Example:</span>
+					<table>
+						<tr>
+							<th>input</th>
+							<th>output</th>
+						</tr>
+						<tr>
+							<td>512</td>
+							<td>two</td>
+						</tr>
+						<tr>
+							<td>1024</td>
+							<td>four</td>
+						</tr>
+						<tr>
+							<td>12309</td>
+							<td>nine</td>
+						</tr>
+					</table>
+				</div>
+				<div class="interface">
+				<span>Enter an integer:</span>
+				<input type="number" id="inputP1" />
+				<p class="tooltip tooltip2">Integer numbers only</p>
+				<input type="submit" value="Enter" onclick="solveProblem1()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Console:</h3>
+				<p id="ResultP1"></p>
+			</div>
+		</section>
+		<section id="p2" class="Content">
+			<form method="get">
+				<h2>Problem 2. Reverse number</h2>
+				<p>Write a function that reverses the digits of given decimal number.</p>
+				<div class="example">
+					<span class="hint">Example:</span>
+					<table>
+						<tr>
+							<th>input</th>
+							<th>output</th>
+						</tr>
+						<tr>
+							<td>256</td>
+							<td>652</td>
+						</tr>
+						<tr>
+							<td>123.45</td>
+							<td>54.321</td>
+						</tr>
+					</table>
+				</div>
+				<div class="interface">
+						<span>Enter a number:</span>
+						<input type="number" id="inputP2" />
+						<p class="tooltip tooltip2">You can use decimal value</p>
+					<input type="submit" value="Enter" onclick="solveProblem2()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Console:</h3>
+				<p id="ResultP2"></p>
+			</div>
+		</section>
+		<section id="p3" class="Content">
+			<form method="get">
+				<h2>Problem 3. Occurrences of word</h2>
+				<p>Write a function that finds all the occurrences of word in a text.</p>
+				<p>The search can be case sensitive or case insensitive.</p>
+				<p>Use function overloading.</p>
+				<div class="interface">
+					<span>Enter a word:</span>
+					<input type="text" id="inputP3" />
+					<p class="tooltip tooltip2">Select the checkbox for case sensitive search</p>
+					<input type="checkbox" id="inputP3c" />
+					<input type="submit" value="Enter" onclick="solveProblem3()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Some Random Text</h3>
+				<p id="ResultP3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus iure, ea saepe iste illo asperiores commodi doloremque magni rerum consequatur possimus voluptate quod hic culpa maxime explicabo ullam qui ut provident, veniam itaque adipisci vitae aliquid! Optio harum, quam nobis nisi veritatis qui, laborum. Molestiae minus sint deleniti tenetur sit nesciunt temporibus placeat neque, facere aliquam obcaecati ullam voluptates incidunt non libero quisquam maiores, commodi molestias. Exercitationem ipsam saepe itaque?</p>
+			</div>
+		</section>
+		<section id="p4" class="Content">
+			<form method="get">
+				<h2>Problem 4. Number of elements</h2>
+				<p>Write a function to count the number of <em>div</em> elements on the web page.</p>
+				<div class="interface">
+					<span>Ready?</span>
+					<input type="submit" value="Solve" onclick="solveProblem4()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Result:</h3>
+				<p id="ResultP4"></p>
+			</div>
+		</section>
+		<section id="p5" class="Content">
+			<form method="get">
+				<h2>Problem 5. Appearance count</h2>
+				<p>Write a function that counts how many times given number appears in given array.</p>
+				<p>Write a test function to check if the function is working correctly.</p>
+				<div class="interface">
+					<div>
+						<span>Array: </span>
+						<input type="text" id="inputP5a" />
+						<p class="tooltip">Enter numbers separated by space</p>
+					</div>
+					<div>
+						<span>Search for: </span>
+						<input type="text" id="inputP5b" />
+						<p class="tooltip">Leave the fields empty to test</p>
+						<input type="submit" value="Enter" onclick="solveProblem5()" name="submit" />
+					</div>
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Result:</h3>
+				<p id="ResultP5"></p>
+			</div>
+		</section>
+		<section id="p6" class="Content">
+			<form method="get">
+				<h2>Problem 6. Larger than neighbours</h2>
+				<p>Write a function that checks if the element at given position in given array of integers is bigger than its two neighbours (when such exist).</p>
+				<div class="interface">
+					<div>
+						<p class="hint">Enter numbers separated by space</p>
+						<span>Array: </span>
+						<input type="text" id="inputP6a" />
+						<p class="tooltip">Leave empty to generate random numbers</p>
+					</div>
+					<div>
+						<span>Position: </span>
+						<input type="number" id="inputP6b" />
+						<p class="tooltip">Choose which index to check</p>
+						<input type="submit" value="Enter" onclick="solveProblem6()" name="submit" />
+					</div>
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Result:</h3>
+				<p id="ResultP6"></p>
+			</div>
+		</section>
+		<section id="p7" class="Content">
+			<form method="get">
+				<h2>Problem 7. First larger than neighbours</h2>
+				<p>Write a function that returns the index of the first element in array that is larger than its neighbours or -1, if there’s no such element.</p>
+				<p>Use the function from the previous exercise.</p>
+				<div class="interface">
+					<span>Array: </span>
+					<input type="text" id="inputP7a" />
+					<p class="tooltip tooltip2">Enter numbers separated by space</p>
+				<input type="submit" value="Enter" onclick="solveProblem7()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Result:</h3>
+				<p id="ResultP7"></p>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
+

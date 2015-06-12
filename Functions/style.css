@@ -1,0 +1,304 @@
+/* Default Reset */
+html,
+body,
+div,
+span,
+object,
+p,
+a,
+em,
+img,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+output,
+section {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+}
+/*End of Reset*/
+/*Custom Style Sheet Below*/
+/* Transition Efect Animation */
+@-webkit-keyframes appearThenFadeOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes appearThenFadeOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes appearThenFadeOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes appearThenFadeOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  padding: 10% 0;
+  font-size: 16px;
+  font-family: Palatino Linotype;
+  background: -moz-linear-gradient(45deg, #2b0808 0%, #a86c54 59%, rgba(202, 135, 105, 0.7) 75%, rgba(255, 178, 137, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #2b0808), color-stop(59%, #a86c54), color-stop(75%, rgba(202, 135, 105, 0.7)), color-stop(100%, rgba(255, 178, 137, 0)));
+  background: -webkit-linear-gradient(45deg, #2b0808 0%, #a86c54 59%, rgba(202, 135, 105, 0.7) 75%, rgba(255, 178, 137, 0) 100%);
+  background: -o-linear-gradient(45deg, #2b0808 0%, #a86c54 59%, rgba(202, 135, 105, 0.7) 75%, rgba(255, 178, 137, 0) 100%);
+  background: -ms-linear-gradient(45deg, #2b0808 0%, #a86c54 59%, rgba(202, 135, 105, 0.7) 75%, rgba(255, 178, 137, 0) 100%);
+  background: linear-gradient(45deg, #2b0808 0%, #a86c54 59%, rgba(202, 135, 105, 0.7) 75%, rgba(255, 178, 137, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2b0808', endColorstr='#00ffb289', GradientType=1);
+  background-attachment: fixed;
+  height: 100%;
+}
+header {
+  width: 800px;
+  margin: 0 auto;
+}
+header h1 {
+  text-align: center;
+  margin: 10px 0;
+  text-decoration: underline;
+  color: transparent;
+  text-shadow: -9px 5px 1px #67382d, -10px 5px 2px #000000;
+  cursor: default;
+}
+#Navigation {
+  text-align: center;
+}
+#Navigation ul {
+  border: 1px solid #000;
+  padding: 10px 0;
+}
+#Navigation ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#Navigation ul li a {
+  padding: 2px 5px;
+  color: #fff;
+  border: 1px outset #fff;
+  background: #b67d66;
+}
+#Navigation ul li a:active {
+  border-style: inset;
+}
+#MainContent {
+  width: 960px;
+  height: 340px;
+  margin: 5px auto;
+}
+#MainContent .Content {
+  display: none;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 5px auto;
+  border: 1px solid #000;
+  padding: 10px;
+  background: #DFC9B2;
+}
+#MainContent .Content:target {
+  display: block;
+}
+#MainContent .Content h2,
+#MainContent .Content p,
+#MainContent .Content form {
+  margin: 0 5px 5px 5px;
+}
+#MainContent .Content .hint {
+  font-style: italic;
+  margin-bottom: -5px;
+}
+#MainContent .Content form {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  height: 100%;
+  color: #955d49;
+}
+#MainContent .Content form > p {
+  margin-bottom: 20px;
+}
+#MainContent .Content form > p em {
+  background: #ddd;
+}
+#MainContent .Content form a {
+  color: #7A8AE2;
+}
+#MainContent .Content form .example table {
+  border-collapse: collapse;
+}
+#MainContent .Content form .example th,
+#MainContent .Content form .example td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+#MainContent .Content form .example th,
+#MainContent .Content form .example em {
+  font-weight: bold;
+}
+#MainContent .Content form .example td {
+  color: #000;
+}
+#MainContent .Content form .interface {
+  position: absolute;
+  bottom: 10px;
+  width: 48%;
+}
+#MainContent .Content form .interface span {
+  font-size: 18px;
+  display: block;
+}
+#MainContent .Content form .interface div {
+  width: 100%;
+  padding: 2px 0;
+}
+#MainContent .Content form .interface input {
+  color: #fff;
+  background: #b67d66;
+  font-size: 20px;
+}
+#MainContent .Content form .interface input[type="number"] {
+  width: 100px;
+}
+#MainContent .Content form .interface input[type="number"]::-webkit-inner-spin-button,
+#MainContent .Content form .interface input[type="number"] -webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+#MainContent .Content form .interface input[type="text"] {
+  width: 200px;
+}
+#MainContent .Content form .interface input[type="text"],
+#MainContent .Content form .interface input[type="number"] {
+  background: #fff;
+  color: #955d49;
+  font-style: italic;
+}
+#MainContent .Content form .interface input[type="text"]:focus,
+#MainContent .Content form .interface input[type="number"]:focus {
+  background: #FFFFBE;
+}
+#MainContent .Content form .interface input[type="text"]:focus + .tooltip,
+#MainContent .Content form .interface input[type="number"]:focus + .tooltip {
+  display: block;
+  opacity: 0;
+  cursor: default;
+  -webkit-animation: appearThenFadeOut ease-in-out 3.5s;
+  -moz-animation: appearThenFadeOut ease-in-out 3.5s;
+  -o-animation: appearThenFadeOut ease-in-out 3.5s;
+  animation: appearThenFadeOut ease-in-out 3.5s;
+}
+#MainContent .Content form .interface .tooltip {
+  display: none;
+  position: absolute;
+  left: -5px;
+  bottom: -36px;
+  vertical-align: bottom;
+  height: 26px;
+  width: auto;
+  padding: 2px 5px 0 5px;
+  text-align: left;
+  font-style: italic;
+  text-decoration: underline;
+  color: #fff;
+  background: #b67d66;
+  box-shadow: -2px 4px 15px #67382d, -2px 5px 12px #000000;
+}
+#MainContent .Content form .interface .tooltip em {
+  color: #3a6deb;
+}
+#MainContent .Content form .interface .tooltip2 {
+  left: -5px;
+  top: 56px;
+}
+#MainContent .Content .Result {
+  font-family: Consolas;
+  font-style: italic;
+  border: 1px solid #000;
+  display: inline-block;
+  vertical-align: top;
+  width: 51%;
+  height: 320px;
+  overflow: auto;
+  background: #000;
+  color: #eee;
+  box-sizing: border-box;
+  padding: 0px 5px;
+}
+#MainContent .Content .Result em {
+  color: #C57F06;
+}
+#MainContent .Content .Result strong {
+  background: #3a6deb;
+}
+#MainContent .Content .Result h3 {
+  font-style: normal;
+  text-align: center;
+  margin: 2px;
+}
+#Navigation ul,
+.Content {
+  box-shadow: -9px 11px 20px #67382d, -10px 11px 15px #000000;
+}

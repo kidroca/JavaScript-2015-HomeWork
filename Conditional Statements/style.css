@@ -1,0 +1,63 @@
+/* Style Sheet */
+body {
+  background: -webkit-linear-gradient(bottom right, rgba(0, 0, 0, 0.85) 0%, rgba(87, 58, 143, 0.67) 50%, rgba(0, 0, 0, 0.85) 100%);
+  background: -o-linear-gradient(bottom right, rgba(0, 0, 0, 0.85) 0%, rgba(87, 58, 143, 0.67) 50%, rgba(0, 0, 0, 0.85) 100%);
+  background: -ms-linear-gradient(bottom right, rgba(0, 0, 0, 0.85) 0%, rgba(87, 58, 143, 0.67) 50%, rgba(0, 0, 0, 0.85) 100%);
+  background: -moz-linear-gradient(bottom right, rgba(0, 0, 0, 0.85) 0%, rgba(87, 58, 143, 0.67) 50%, rgba(0, 0, 0, 0.85) 100%);
+  background-repeat: no-repeat;
+}
+main {
+  padding: 0 9%;
+}
+section {
+  display: inline-block;
+  vertical-align: top;
+  width: 475px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #000;
+  background: #ccc;
+  box-shadow: 3px 3px 3px #000 , 3px 3px 3px #fff;
+}
+section h2 {
+  text-align: center;
+  margin-top: 5px;
+}
+section li {
+  padding: 5px;
+}
+section input {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  display: block;
+}
+section table {
+  display: inline-block;
+  margin: 0 15px;
+}
+section table th {
+  padding-top: 17px;
+  vertical-align: bottom;
+}
+section table th div {
+  padding-bottom: 5px;
+}
+section table .output {
+  border: 1px solid #000;
+  width: 100%;
+  background: #434343;
+  color: #fff;
+  text-align: center;
+}
+section table .output:first-letter {
+  text-transform: uppercase;
+}
+section button {
+  height: 76px;
+  margin: 0 2px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

@@ -1,0 +1,44 @@
+/* Default Reset */
+html,
+body,
+p,
+a,
+main {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+}
+/*End of Reset*/
+/*Custom Style Sheet Below*/
+html {
+  min-height: 100%;
+}
+body {
+  background: #d5cea6;
+  background: -moz-linear-gradient(45deg, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #d5cea6), color-stop(40%, #c9c190), color-stop(100%, #b7ad70));
+  background: -webkit-linear-gradient(45deg, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+  background: -o-linear-gradient(45deg, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+  background: -ms-linear-gradient(45deg, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+  background: linear-gradient(45deg, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5cea6', endColorstr='#b7ad70', GradientType=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  width: 50%;
+  margin: 0 auto;
+}
+main h1 {
+  color: #fff;
+}
+main p.function {
+  color: #FFE85F;
+}
+main p.function:hover {
+  cursor: pointer;
+  color: #7374CA;
+}

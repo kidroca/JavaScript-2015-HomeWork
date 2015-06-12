@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Arrays Homework</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+<body>
+	<header>
+		<h1>Arrays Homework</h1>
+		<nav id="Navigation">
+		    <ul>
+		        <li><a href="#p1">Problem 1</a></li>
+		        <li><a href="#p2">Problem 2</a></li>
+		        <li><a href="#p3">Problem 3</a></li>
+		        <li><a href="#p4">Problem 4</a></li>
+		        <li><a href="#p5">Problem 5</a></li>
+		        <li><a href="#p6">Problem 6</a></li>
+		        <li><a href="#p7">Problem 7</a></li>
+		    </ul>
+		</nav>
+	</header>
+	<main id="MainContent">
+		<section id="p1" class="Content">
+			<form method="get">
+				<h2>Problem 1. Increase array members</h2>
+				<p>Write a script that allocates array of 20 integers and initializes each element by its index multiplied by <em>5</em>.</p>
+				<p>Print the obtained array on the console.</p>
+				<div class="interface">
+				<span>Display Result</span>
+				<input type="submit" value="Ok" onclick="allocateArray()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Console:</h3>
+				<p id="ResultP1"></p>
+			</div>
+		</section>
+		<section id="p2" class="Content">
+			<form method="get">
+				<h2>Problem 2. Lexicographically comparison</h2>
+				<p>Write a script that compares two char arrays lexicographically (letter by letter).</p>
+				<div class="interface">
+				<p class="hint">Enter characters separated by space</p>
+				<div>
+					<span>stark[] </span>
+					<input type="text" id="inputP2a" />
+					<p class="tooltip">Leave empty to generate random chars</p>
+				</div>
+				<div>
+					<span>lanister[] </span>
+					<input type="text" id="inputP2b" />
+					<p class="tooltip">Leave empty to generate random chars</p>
+				</div>
+				<input type="submit" value="Enter" onclick="lexComparison()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Console:</h3>
+				<p id="ResultP2"></p>
+			</div>
+		</section>
+		<section id="p3" class="Content">
+			<form method="get">
+				<h2>Problem 3. Maximal sequence</h2>
+				<p>Write a script that finds the maximal sequence of equal elements in an array.</p>
+				<div class="example">
+					<span class="hint">Example:</span>
+					<table>
+						<tr>
+							<th>input</th>
+							<th>result</th>
+						</tr>
+						<tr>
+							<td>2, 1, 1, 2, 3, 3, <em>2, 2, 2</em>, 1</td>
+							<td>2, 2, 2</td>
+						</tr>
+					</table>
+				</div>
+				<div class="interface">
+				<span>Enter numbers separated by space:</span>
+				<input type="text" id="inputP3" />
+				<p class="tooltip tooltip2">Leave empty to generate random numbers</p>
+				<input type="submit" value="Enter" onclick="mostRepSeq()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Result:</h3>
+				<p id="ResultP3"></p>
+			</div>
+		</section>
+		<section id="p4" class="Content">
+			<form method="get">
+				<h2>Problem 4. Maximal increasing sequence</h2>
+				<p>Write a script that finds the maximal increasing sequence in an array.</p>
+				<div class="example">
+					<span class="hint">Example:</span>
+					<table>
+						<tr>
+							<th>input</th>
+							<th>result</th>
+						</tr>
+						<tr>
+							<td>3, <em>2, 3, 4</em>, 2, 2, 4</td>
+							<td>2, 3, 4</td>
+						</tr>
+					</table>
+				</div>
+				<div class="interface">
+				<span>Enter numbers separated by space:</span>
+				<input type="text" id="inputP4" />
+				<p class="tooltip tooltip2">Leave empty to generate random numbers</p>
+				<input type="submit" value="Enter" onclick="maxIncrSeq()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Result:</h3>
+				<p id="ResultP4"></p>
+			</div>
+		</section>
+		<section id="p5" class="Content">
+			<form method="get">
+				<h2>Problem 5. Selection sort</h2>
+				<p>Sorting an array means to arrange its elements in increasing order.</p>
+				<p>Write a script to sort an array.</p>
+				<p>Use the <a href="http://en.wikipedia.org/wiki/Selection_sort">selection sort</a> algorithm: Find the smallest element, move it at the first position, find the smallest from the rest, move it at the second position, etc.</p>
+				<span class="hint">Hint: Use a second array</span>
+				<div class="interface">
+				<span>Enter numbers separated by space:</span>
+				<input type="text" id="inputP5" />
+				<p class="tooltip tooltip2">Leave empty to generate random numbers</p>
+				<input type="submit" value="Enter" onclick="useSelectionSort()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Result:</h3>
+				<p id="ResultP5"></p>
+			</div>
+		</section>
+		<section id="p6" class="Content">
+			<form method="get">
+				<h2>Problem 6. Most frequent number</h2>
+				<p>Write a script that finds the most frequent number in an array.</p>
+				<div class="example">
+					<span class="hint">Example:</span>
+					<table>
+						<tr>
+							<th>input</th>
+							<th>result</th>
+						</tr>
+						<tr>
+							<td><em>4</em>, 1, 1, <em>4</em>, 2, 3, <em>4</em>, <em>4</em>, 1, 2, <em>4</em>, 9, 3</td>
+							<td>4(5 times)</td>
+						</tr>
+					</table>
+				</div>
+				<div class="interface">
+				<span>Enter numbers separated by space:</span>
+				<input type="text" id="inputP6" />
+				<p class="tooltip tooltip2">Leave empty to generate random numbers</p>
+				<input type="submit" value="Enter" onclick="mostFreqNum()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Result:</h3>
+				<p id="ResultP6"></p>
+			</div>
+		</section>
+		<section id="p7" class="Content">
+			<form method="get">
+				<h2>Problem 7. Binary search</h2>
+				<p>Write a script that finds the index of given element in a sorted array of integers by using the <a href="http://en.wikipedia.org/wiki/Binary_search_algorithm">binary search</a> algorithm.</p>
+				<div class="interface">
+				<p class="hint">Enter characters separated by space</p>
+				<div>
+					<span>Array: </span>
+					<input type="text" id="inputP7a" />
+					<p class="tooltip">Leave empty to generate random numbers</p>
+				</div>
+				<div>
+					<span>Search for: </span>
+					<input type="text" id="inputP7b" />
+					<p class="tooltip">Please, pick a number, no randoms here</p>
+				</div>
+				<input type="submit" value="Enter" onclick="useBinarrySearch()" name="submit" />
+				</div>
+			</form>
+			<div  class="Result">
+				<h3>Result:</h3>
+				<p id="ResultP7"></p>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
